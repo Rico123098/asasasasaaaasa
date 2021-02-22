@@ -11,7 +11,7 @@ const commandHanler = require("./handlers/command.handler")
 const eventHandler = require("./handlers/events.handler")
 
 const apiHandler = require("./handlers/api.handler")
-const token = new Client();
+
 
 const log = console.log 
 
@@ -26,4 +26,4 @@ client.on('ready', () => {
 
 });
 
-client.login(process.env.token);
+client.login(token);
